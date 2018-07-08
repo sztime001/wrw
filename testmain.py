@@ -2,7 +2,7 @@
 This is the test main loop for testing the game engine.
 """
 from core.wrwengine import WrwGameEngine
-
+from flask import Flask
 
 _GAMESTATUS = True
 

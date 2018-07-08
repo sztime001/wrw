@@ -23,7 +23,7 @@ class WrwStateEngine(object):
 
     def day_night_shift(self, future):
         self._round +=1
-        asyncio.ensure_future(self.roundresult(future))        
+        asyncio.ensure_future(self.roundresult(future))
 
     async def roundresult(self, future):
         if self._round %10 == 0:
@@ -62,7 +62,7 @@ class WrwNightLoop(WrwBasicEventLoop):
         pass
     def start_loop(self):
         self.be_loop.run_until_complete(self.be_loop_completion)
-        
+
 class WrwDaytimeLoop(WrwBasicEventLoop):
     def __init__(self):
         pass
